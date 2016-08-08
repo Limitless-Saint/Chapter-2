@@ -1,0 +1,53 @@
+//input three integers from the keyboard and prints the sum, product, average, smallest, and largest
+
+#include <iostream>
+
+using namespace std;
+
+//function main begins
+
+int main()
+{
+	int number1;
+	int number2;
+	int number3;
+	int sum;
+	int average;
+	int product;
+
+	cout << "Please enter three integers each followed by a space. ";
+	cin >> number1 >> number2 >> number3;
+
+	sum = number1 + number2 + number3;
+	average = sum / 3;
+	product = number1 * number2 * number3;
+
+	cout << "Sum is " << sum << endl;
+	cout << "Average is " << average << endl;
+	cout << "Product is " << product << endl;
+
+	if (number1 < number2)
+		if (number1 < number3)
+			cout << number1 << " is smallest. \n";
+
+	if (number1 > number2)
+		if (number2 < number3)
+			cout << number2 << " is smallest. \n";
+
+	if (number1 < number2)
+		if (number1 > number3)
+			cout << number3 << " is smallest \n";
+
+	if (number1 > number2)
+		if (number1 > number3)
+			cout << number1 << " is largest \n";
+
+	if (number1 < number2)
+		if (number2 > number3)
+			cout << number2 << " is largest \n";
+
+	if (number1 < number2)
+		if (number2 < number3)
+			cout << number3 << " is largest \n";
+
+} // end function main
