@@ -1,0 +1,23 @@
+// determining multiples of a number
+#include <iostream>
+using namespace std;
+
+//main function begins
+
+int main()
+{
+	int number1;
+	int number2;
+	int modulus;
+
+	cout << " Please enter two numbers each followed by a space: ";
+	cin >> number1 >> number2;
+
+	modulus = number1 % number2;
+
+	if (modulus == 0)
+		cout << number1 << " is a multiple of " << number2;
+	if (modulus != 0)
+		cout << number1 << " is not a multiple of " << number2;
+
+}// end of program
