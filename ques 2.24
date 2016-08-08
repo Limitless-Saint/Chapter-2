@@ -1,0 +1,23 @@
+//program will determine odd and even integers
+
+#include <iostream>
+using namespace std;
+
+//main function begins
+
+int main()
+{
+	int integer; //variable declaration
+	int modulus; //variable declaration
+
+	cout << "Please enter an integer: \n";
+	cin >> integer;
+	
+	modulus = integer % 2;
+
+	if (modulus == 0)
+		cout << integer << " is an even number\n\n";
+	if (modulus != 0)
+		cout << integer << " is an odd number\n\n";
+
+} //end of program
