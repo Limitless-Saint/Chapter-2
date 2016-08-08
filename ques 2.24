@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-//main function begins
+//main function begins  [HOW TO GET NWLINE ON NON QUOTATION PORTIONS?]
 
 int main()
 {
